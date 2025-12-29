@@ -12,6 +12,6 @@ signs =[",","-","(",")","'",'"',"."]
 
 for p in signs:
     analysis = analysis.replace(p," ")
-analysis.split()
+
 print(analysis)
 #print(cleaned_sentences)
