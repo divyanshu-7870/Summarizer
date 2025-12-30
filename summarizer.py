@@ -1,4 +1,4 @@
-myText = input("Put the Blog below :")
+myText = """ """
 splitted_sentences = myText.split(".")
 
 def text_cleaning (sentence): # empty spaces removal
