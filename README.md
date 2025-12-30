@@ -23,9 +23,9 @@ and scoring sentences based on their importance.
 
 1. Clone the repository.
 2. Open the Python file.
-3. Run the script using:
+3. Paste the text in myText variable quotes. 
+4. Run the script using:
    python summarizer.py
-4. Input any long text.
 5. The generated summary will be printed in the terminal.
 
 ## EXAMPLE
