@@ -13,5 +13,43 @@ signs =[",","-","(",")","'",'"',"."]
 for p in signs:
     analysis = analysis.replace(p," ")
 
-print(analysis)
+words =analysis.split(" ")
+
+stop_words= ["the","is","to","of","and","for","in","on","under","a",'']
+without_stopWords =[]
+for p in words:
+    if p not in stop_words:
+        without_stopWords.append(p)
+
+
+wordcount= {}
+for p in without_stopWords:
+    if p in wordcount:
+        wordcount[p]+=1
+    else :
+        wordcount[p]=1
+wordcount=wordcount.items()   
+
+def getcount(wordcount):
+    return wordcount[1]
+
+sorted_wordcount = sorted(wordcount,key = getcount, reverse= True)
+
+
+sentene_score = {}
+for s in cleaned_sentences:
+    s= s.lower()
+    for k in signs:
+        s= s.replace(k," ")
+    s = s.split(" ")
+    
+
+
+
+
+
+
+print(cleaned_sentences)
+
+
 #print(cleaned_sentences)
